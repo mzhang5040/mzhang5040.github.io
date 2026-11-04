@@ -77,6 +77,11 @@
     .timeline-row .resource-links { margin-top: 8px; }
     .timeline-row h3 a:hover, .entry h3 a:hover { color: var(--accent); }
 
+    .featured-project { max-width: 850px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 32px; }
+    .featured-project h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 1.65rem; margin: 6px 0 10px; }
+    .featured-project p { color: var(--muted); margin: 0; }
+    .featured-project .resource-links { margin-top: 18px; }
+    @media (max-width: 650px) { .featured-project { grid-template-columns: 1fr; padding: 24px; } }
     .leadership { display: grid; grid-template-columns: 1fr 1fr; column-gap: 72px; }
     .entry { padding: 26px 0; border-top: 1px solid var(--line); }
     .entry h3 { font-size: 1.09rem; letter-spacing: -.017em; margin-bottom: 5px; }
@@ -131,6 +136,7 @@
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#leadership">Leadership</a>
         <a href="#presentations">Presentations</a>
         <a href="#honors">Honors</a>
@@ -208,9 +214,23 @@
       </div>
     </section>
 
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">03 / Applied work</div><h2>Selected projects</h2></div></div>
+        <article class="featured-project">
+          <div>
+            <div class="small-heading">Congressional App Challenge · 2026</div>
+            <h3>Youth Policy Pulse</h3>
+            <p>A web application focused on helping young people engage with public policy. Recognized in the Congressional App Challenge (NE-02).</p>
+            <div class="resource-links"><a href="http://www.youthpolicypulse.com/" target="_blank" rel="noopener noreferrer">Explore Youth Policy Pulse ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="leadership">
       <div class="container">
-        <div class="section-head"><div><div class="eyebrow">03 / Beyond research</div><h2>Leadership & service</h2></div></div>
+        <div class="section-head"><div><div class="eyebrow">04 / Beyond research</div><h2>Leadership & service</h2></div></div>
         <div class="leadership">
           <div class="entry">
             <h3><a href="https://www.equity-learning.com/" target="_blank" rel="noopener noreferrer">Equity Learning ↗</a></h3>
@@ -248,7 +268,7 @@
 
     <section id="presentations">
       <div class="container">
-        <div class="section-head"><div><div class="eyebrow">04 / Sharing ideas</div><h2>Presentations</h2></div></div>
+        <div class="section-head"><div><div class="eyebrow">05 / Sharing ideas</div><h2>Presentations</h2></div></div>
         <div class="timeline">
           <div class="timeline-row">
             <div class="timeline-date">November 2026</div>
@@ -276,7 +296,7 @@
 
     <section id="honors">
       <div class="container">
-        <div class="section-head"><div><div class="eyebrow">05 / Selected recognition</div><h2>Honors</h2></div></div>
+        <div class="section-head"><div><div class="eyebrow">06 / Selected recognition</div><h2>Honors</h2></div></div>
         <div class="recognitions">
           <span class="recognition">Colorado Outstanding Youth in Philanthropy Award · 2026</span>
           <span class="recognition">Congressional App Challenge Winner · NE-02 · 2026</span>
@@ -293,11 +313,11 @@
 
     <section id="contact" class="contact">
       <div class="container contact-panel">
-        <div class="eyebrow">06 / Get in touch</div>
+        <div class="eyebrow">07 / Get in touch</div>
         <h2>Let's connect.</h2>
         <p>I'm always interested in conversations about mathematics, research, education, and opportunities to make a difference.</p>
         <div class="contact-links">
-          <!-- REPLACE the placeholder addresses and links below before publishing. -->
+          <!-- Contact links: edit these values if your contact information changes. -->
           <a class="button primary" href="mailto:mzhang5040@gmail.com">Email me <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="https://github.com/mzhang5040" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <!-- Optional: Upload resume.pdf next to index.html, then uncomment the next line. -->
